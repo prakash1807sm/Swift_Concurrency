@@ -10,7 +10,7 @@ import Combine
 
 class DownloadImageAsyncImageLoader {
     
-    let url = URL(string: "https://picsum.photos/id/237/200/300")!
+    let url = URL(string: "https://picsum.photos/200")!
     
     func handleResponse(data: Data?, response: URLResponse?) -> UIImage?{
         guard
