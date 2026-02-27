@@ -10,6 +10,9 @@
  2. Sendable : The Sendable protocol indicates that value of the given type can be safely used in concurrent code.
  3. @unchecked Sendable means we are telling the compiler that this will be Sendable, we will make sure of it. don't worry and you don't need to check and so compiler will not check if it is sendable or not.
  4. We are using swift5 language.
+ 5. This type is safe to transfer across concurrency domains (tasks / actors / threads)
+ 6. only final class can conform to Sendable because subclasses could introduce mutable state and break thread safety.
+ 7 Value types i.e structs conform to sendable protocol by default but still we need to explicitly pass the concurrency contracts by conforming to sendable protocol while creating structs.
  */
 
 import SwiftUI
