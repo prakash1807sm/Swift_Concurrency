@@ -78,6 +78,7 @@
 
 import SwiftUI
 
+
 actor StructClassActorBootcampDataManager { //this class is shared across multiple viewModels/threads.
     func getDataFromDatabase() {
         
